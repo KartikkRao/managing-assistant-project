@@ -1,0 +1,288 @@
+{
+	"info": {
+		"_postman_id": "9108879f-a1cb-4f09-84ab-5c09e973355c",
+		"name": "Managing assistants",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33665427"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/getdata",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/getdata",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getdata"
+					]
+				},
+				"description": "Get all data of all assistants from the database "
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/databyid?id=C0869",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/databyid?id=C0869",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"databyid"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "C0869"
+						}
+					]
+				},
+				"description": "Get all data of the specified assistant "
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/postdata",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "jhdsy3tr743rynd3gry7478r43h4873y23rhbc32r",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "key",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "C0871",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Pulkit Gupta",
+							"type": "text"
+						},
+						{
+							"key": "mobile_number",
+							"value": "8765432178",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "pulkitgupta@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Mumbai",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "India",
+							"type": "text"
+						},
+						{
+							"key": "department",
+							"value": "AI ML",
+							"type": "text"
+						},
+						{
+							"key": "Role",
+							"value": "intern",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "10000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/postdata",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"postdata"
+					]
+				},
+				"description": "Create a new data for adding new assistant"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/updatedata?id=C0869",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "jhdsy3tr743rynd3gry7478r43h4873y23rhbc32r",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "key",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Kartik Rao",
+							"type": "text"
+						},
+						{
+							"key": "mobile_number",
+							"value": "7264817938",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "kartikraoat@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Mumbai",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "India",
+							"type": "text"
+						},
+						{
+							"key": "department",
+							"value": "Backend",
+							"type": "text"
+						},
+						{
+							"key": "Role",
+							"value": "Intern",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "10000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/updatedata?id=C0869",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"updatedata"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "C0869"
+						}
+					]
+				},
+				"description": "updating a particular assistant details"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/deletedata?id=C0871",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "jhdsy3tr743rynd3gry7478r43h4873y23rhbc32r",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "key",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/deletedata?id=C0871",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"deletedata"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "C0871"
+						}
+					]
+				},
+				"description": "deleting data of a specified assistant "
+			},
+			"response": []
+		}
+	]
+}
