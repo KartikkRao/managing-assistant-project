@@ -10,10 +10,11 @@ const app = express();
 const port = 3000;
 
 env.config();
+//HELLO WELCOME
 
 const limiter=rateLimit({
     windowMs:10*60*1000,  //10min
-    max: 100              //100 request per 10min per IP
+    max: 100             //100 request per 10min per IP
 });
 app.use(limiter);
 
